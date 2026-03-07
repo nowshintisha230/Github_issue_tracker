@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub_issue_tracker</title>
+    <title>GitHub_login</title>
+    <!--title icon-->
+    <link rel="shortcut icon" href="./github image.webp" type="image/x-icon">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--tailwind-->
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <!--daisyui-->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+      
 </head>
 <body>
-    hi
+<header>
+   <section class=" shadow m-auto p-5 space-y-4">
+    <div class="text-center">
+    <i class="fa-brands fa-github fa-8x"></i>
+    </div>
+    <div class="text-center">
+        <h1 class="font-bold">GitHub Issues Tracker</h1>
+        <p class="text-gray-500">Sign in to manage your issues</p>
+    </div>
+    <!--form-->
+    <div class="flex items-center justify-center">
+    <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+<!--username-->
+  <label class="label">Username:</label>
+  <input type="name" class="input" id="username" placeholder="username" />
+<p class="text-blue-500">Default : admin</p>
+<!--password-->
+  <label  class="label">Password</label>
+  <input type="password" class="input" id="password" placeholder=".............." />
+<p class="text-blue-500">Default : admin123</p>
+<!--login button-->
+  <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
+</fieldset>
+</div>
+   </section> 
+</header>
+
+<!--js scripts-->
+<script src="./script.js/detailpage.js"></script>
 </body>
 </html>
