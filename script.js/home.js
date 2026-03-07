@@ -11,10 +11,18 @@ issuesContainer.innerHTML = " ";
 for(let issue of issues){
 //3.create element
 const issueDiv=document.createElement("div");
-issueDiv.innerHTML=`<div class="border-2 p-2 shadow-lg  h-full space-y-2" >
-<h3 class="font-bold">${issue.title}</h3>
-      <p>Description:${issue.description}</p>
+issueDiv.innerHTML=`<div class="relative p-2 shadow-lg  h-full space-y-2  border-t-4 rounded-xl ${issue.status.toLowerCase() === 'open' 
+  ? 'border-t-green-500' 
+  : 'border-t-purple-500'}">
+  
+  ${issue.status.toLowerCase() === 'open'
+? `<img src="./assets/Open-Status.png" class=" absolute top-2 left-2"></img>`
+: `<img src="./assets/Closed- Status .png" class=" absolute top-2 left-2"></img>`} 
+  
+${issue.priority.toLowerCase() === 'high'?`<button class="btn rounded-4xl bg-red-100 text-red-600 absolute top-2 right-2">High</button>`:issue.priority.toLowerCase() === 'medium'?`<button class="btn bg-yellow-100 text-yellow-600 rounded-4xl absolute top-2 right-2">Medium</button>`:`<button class="btn rounded-4xl bg-gray-100 text-gray-600 absolute top-2 right-2">Low</button>`}
 
+<h3 class="font-bold mt-12">${issue.title}</h3>
+      <p>${issue.description}</p>
 
      <div class="flex gap-2"> 
      <button class="btn  ${issue.labels[0] 
