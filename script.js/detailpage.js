@@ -5,7 +5,7 @@ loginBtn.addEventListener("click",()=>{
     const pass=document.getElementById("password").value;
 //login check
 if(user==="admin" && pass ==="admin123"){
-    window.location.href="detail.html";
+    window.location.href="home.html";
 }
 else{
     alert("Invalid username or password!");

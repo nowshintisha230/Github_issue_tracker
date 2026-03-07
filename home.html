@@ -1,0 +1,53 @@
+ <title>GitHub_issue_tracker</title>
+ <!--title icon-->
+    <link rel="shortcut icon" href="./github image.webp" type="image/x-icon">
+     <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--tailwind-->
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <!--daisyui-->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+      
+    <!--body-->
+    <body class="space-y-5 w11/12 mx-auto p-5">
+      <!--navbar-->
+<header>
+      <div class="navbar bg-base-100 shadow-sm">
+  <div class="flex-1">
+    <h1 class="btn btn-ghost  md:text-xl font-bold"> <i class="fa-brands fa-github fa-x"></i>Git Issues Tracker</h1>
+  </div>
+  <div class="flex gap-2">
+    <input type="text" placeholder="Search Issues" class="input input-bordered w-24 md:w-auto" />
+    <button class="btn btn-primary"> + New Issues</button>
+    </div>
+    </div>
+</header>
+<!--hero-->
+<section>
+   <div>
+      <button class="btn ">All</button>
+  <button class="btn">Open</button>
+  <button class="btn ">Closed</button>
+   </div>
+</section>
+<section class="Menu w-full ">
+   <div class="navbar bg-base-300 space-x-1 rounded-xl flex justify-between">
+      <div class="flex gap-5">
+     <img src="./assets/Aperture.png" alt="" class="bg-purple-300 rounded-full p-[0.44rem] w-10 h-10 m-auto">
+      <div>
+   <h1 class="font-bold text-2xl">50 issues</h1>
+   <p clss="text-gray-500">Track and manage your project issues</p>
+</div>
+</div>
+  <div class="flex gap-5 ml-3">
+  <p><i class="fa-solid fa-circle" style="color:rgb(75, 215, 75)"></i>Open</p>
+  <p><i class="fa-solid fa-circle" style="color:rgb(96, 78, 233)"></i>Close</p>
+</div>
+</div>
+</div>
+</section>
+<!--display issues-->
+<div id="issues-container"  class=" grid grid-cols-1 gap-3 lg:grid-cols-4"></div>
+<!--js scripts-->
+<script src="./script.js/home.js"></script>
+    </body>
