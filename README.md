@@ -1,4 +1,4 @@
-# Differanc ebetween let,var and const
+# Differance between let,var and const
 - var – function-scoped, can be redeclared & updated, hoisted.  
 - let – block-scoped, can be updated, cannot be redeclared in the same block.  
 - const – block-scoped, cannot be updated or redeclared, must be initialized.
@@ -17,7 +17,7 @@ const arr2 = [...arr1,4,5]; // [1,2,3,4,5]
 ## js example:
 const add = (a, b) => a + b; // same as function add(a, b) { return a + b; }
 
-# template literals: **Template Literals** – Strings using backticks `` ` `` that can embed variables or expressions.  
+# Template literals: **Template Literals** – Strings using backticks `` ` `` that can embed variables or expressions.  
 Example:  
 ## js example:
 const name = "Tisha";
