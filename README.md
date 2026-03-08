@@ -13,12 +13,11 @@ const arr2 = [...arr1,4,5]; // [1,2,3,4,5]
 **filter()** – Returns a new array with elements that pass a condition.  
 **forEach()** – Executes a function on each element, does not return a new array.
 
-# arrow function:  A shorter way to write functions using `=>`. 
+# Arrow function:  A shorter way to write functions using `=>`. 
 ## js example:
 const add = (a, b) => a + b; // same as function add(a, b) { return a + b; }
 
-# Template literals: **Template Literals** – Strings using backticks `` ` `` that can embed variables or expressions.  
-Example:  
+# Template Literals – Strings using backticks `` ` `` that can embed variables or expressions.    
 ## js example:
 const name = "Tisha";
 const greeting = `Hello, ${name}!`; // "Hello, Tisha!"
