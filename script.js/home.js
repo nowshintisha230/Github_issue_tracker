@@ -4,7 +4,7 @@ const manageSpinner = (status) => {
   const spinner = document.getElementById("spinner");
   const container = document.getElementById("issues-container");
 
-  if (status) {
+  if (status) {                             
     spinner.classList.remove("hidden");
     container.classList.add("hidden");
   } else {
@@ -63,11 +63,14 @@ const displayIssues = (issues) => {
   const issuesContainer = document.getElementById("issues-container");
   issuesContainer.innerHTML = "";
 
+//update issues count number
+ document.getElementById("issue-count").innerText = `${issues.length} issues`;
+
   for (let issue of issues) {
     const issueDiv = document.createElement("div");
 
     issueDiv.innerHTML = `
-      <div onclick="loadIssues(${issue.id})" class="relative p-2 shadow-lg h-full space-y-2 border-t-4 rounded-xl 
+      <div onclick="loadIssues(${issue.id})" class="relative p-2 shadow-lg space-y-2 border-t-4 rounded-xl h-full
         ${issue.status.toLowerCase() === 'open' ? 'border-t-green-500' : 'border-t-purple-500'}">
 
         ${

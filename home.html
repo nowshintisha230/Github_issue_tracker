@@ -12,19 +12,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!--styles-->
       <style>
         .activeBtn {
   background-color: #2563eb; /* blue */
   color: white;
  font-family: "Hind Siliguri", sans-serif;
-  
 }
       </style>
-    <!--body-->
+    <!----------------------body----------------------->
     <body class="space-y-5 w11/12 mx-auto p-5">
       <!--navbar-->
 <header>
-      <div class="navbar bg-base-100 shadow-sm">
+      <div class="navbar bg-base-100 shadow-sm rounded-xl">
   <div class="flex-1">
     <h1 class="btn btn-ghost  md:text-xl font-bold"> <i class="fa-brands fa-github fa-x"></i>Git Issues Tracker</h1>
   </div>
@@ -52,7 +53,7 @@
       <div class="flex gap-5">
      <img src="./assets/Aperture.png" alt="" class="bg-purple-300 rounded-full p-[0.44rem] w-10 h-10 m-auto">
       <div>
-   <h1 class="font-bold text-2xl">50 issues</h1>
+   <h1 id="issue-count" class="font-bold text-2xl">50 issues</h1>
    <p clss="text-gray-500">Track and manage your project issues</p>
 </div>
 </div>
@@ -64,7 +65,7 @@
 </div>
 </section>
 <!--display issues-->
-<div id="issues-container"  class=" grid grid-cols-1 gap-3 lg:grid-cols-4"></div>
+<div id="issues-container"  class=" grid grid-cols-1 gap-3 lg:grid-cols-4 auto-rows-fr"></div>
 <!--spinner-->
 <section id="spinner" class="flex items-center justify-center hidden">
 <span class="loading loading-spinner text-error py-20"></span>
@@ -77,7 +78,7 @@
     </div>
     <div class="modal-action">
       <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
+        
         <button class="btn btn-primary">Close</button>
       </form>
     </div>
