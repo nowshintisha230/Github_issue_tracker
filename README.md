@@ -64,8 +64,8 @@ Right click index.html → Open with Live Server
 ---
 
 ## 🔗 Live Link & GitHub Repository
-- 🌐 **Live Site:** https://your-live-link.com  
-- 💻 **GitHub Repository:** https://github.com/your-username/github-issue-tracker
+- 🌐 **Live Site:** https://nowshintisha230.github.io/Github_issue_tracker/
+- 💻 **GitHub Repository:** https://github.com/nowshintisha230/github-issue-tracker
 
 ---
 
