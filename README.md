@@ -1,3 +1,80 @@
+# 📝 GitHub Issue Tracker
+
+## 📌 Project Overview
+**GitHub Issue Tracker** is a responsive web application built with **HTML, CSS, and JavaScript**.  
+Users can manage issues efficiently by adding new issues, viewing all available issues, deleting unnecessary issues, and tracking statistics like total created, total selected, and total deleted issues.  
+
+This project demonstrates **vanilla JS frontend development**, responsive design, and interactive UI without using any frameworks.
+
+---
+
+## 📸 Screenshot
+<img width="1908" height="915" alt="Screenshot 2026-04-09 102637" src="https://github.com/user-attachments/assets/3f777ee8-99f1-4d18-8e80-029639fe3eca" />
+<img width="1871" height="910" alt="Screenshot 2026-04-09 102656" src="https://github.com/user-attachments/assets/52f565f0-7582-488c-b6f9-3c5f4a38cc28" />
+
+
+---
+
+## 🛠️ Technologies Used
+- HTML5  
+- CSS3  
+- JavaScript (ES6)  
+- Font Awesome (icons)  
+- Local Storage (for saving issues)  
+
+---
+
+## ✨ Main Features
+- **Add / Delete Issues:** Easily add new issues and remove unwanted issues.  
+- **View All Issues:** Display all active issues in a clean interface.  
+- **Issue Statistics:** Track total created, total selected, and total deleted issues.  
+- **Responsive Design:** Works smoothly on mobile, tablet, and desktop.  
+- **Interactive UI:** Buttons, notifications, and dynamic DOM updates using JavaScript.  
+
+---
+
+## 📦 Dependencies
+This project uses only vanilla JS and CSS. Optional dependencies:
+- Font Awesome (for icons)
+- Google Fonts (for typography)
+
+---
+
+## 💻 How to Run Locally
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/github-issue-tracker.git
+```
+
+### 2️⃣ Navigate to the project folder
+```bash
+cd github-issue-tracker
+```
+
+### 3️⃣ Open `index.html` in a browser
+Simply double click `index.html` or run a live server in VS Code.
+
+Example using VS Code Live Server extension:
+
+```bash
+Right click index.html → Open with Live Server
+```
+
+---
+
+## 🔗 Live Link & GitHub Repository
+- 🌐 **Live Site:** https://your-live-link.com  
+- 💻 **GitHub Repository:** https://github.com/your-username/github-issue-tracker
+
+---
+
+## 👩‍💻 Author
+**Nafisa Nowshin Tisha**  
+Frontend Developer | CSE Student | JavaScript & Web Development Enthusiast
+
+## Some Basic Q&A
+
 # Differance between let,var and const
 - var – function-scoped, can be redeclared & updated, hoisted.  
 - let – block-scoped, can be updated, cannot be redeclared in the same block.  
